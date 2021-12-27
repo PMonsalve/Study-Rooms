@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Prob1
+  - Prob2
+  - Prob3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3258328793
+    locked: 0
+  - name: GroundObstacles
+    uniqueID: 4271438997
+    locked: 0
+  - name: GroundObjects
+    uniqueID: 681021299
+    locked: 0
+  - name: Player
+    uniqueID: 1308952571
+    locked: 0
+  - name: PartNoCollision
+    uniqueID: 642991349
+    locked: 0
