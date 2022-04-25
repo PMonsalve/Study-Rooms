@@ -17,8 +17,11 @@ public class Math : MonoBehaviour
                                                     "\"Considerando uma reta crescente em um plano cartesiano que passa pelo eixo y no ponto -4 e passa pelo eixo x pelo ponto 4. Qual é a equação?\"",
                                                     "\"Considerando uma reta crescente em um plano cartesiano que passa pelo eixo y no ponto -6 e passa pelo eixo x pelo ponto 6. Qual é a equação?\"" };
 
-    private string[] expressao3 = new string[5] { "\"6\"", "\"12\"", "\"5\"", "\"4\"","\"-3\"" };
+    private string[] resposta1 = new string[5] { "x+2", "x-2", "x+4", "x+5", "x-1" };
+    private string[] resposta2 = new string[5] { "x-5", "x+2", "x-3", "x-4", "x-6" };
 
+    public string[] escolhido1;
+    public string[] escolhido2;
 
     //  ax² + bx + c = (x - j)(x - k)
     //  Se a reta passa pelo ponto (-2,2), o polinomio é x-2 e como é x-j, uma das raizes no final do calculo de bhaskara com este polinomio será 2.
@@ -47,10 +50,20 @@ public class Math : MonoBehaviour
         return expressao2[valor];
     }
 
-    public string Exp3(int valor)
+    public string Resp1(int valor)
     {
-        return expressao3[valor];
+        return resposta1[valor];
     }
+
+    public string Resp2(int valor)
+    {
+        return resposta2[valor];
+    }
+
+    /*
+     * Fazer um metodo que faz a comparação dos valores. Se o jogo definiu a expressão1[2] e expressão2[1], faz a comparação com resposta1[2] e resposta2[1]
+     * 
+     */
 
 
 }

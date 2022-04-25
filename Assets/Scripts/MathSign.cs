@@ -10,8 +10,11 @@ public class MathSign : MonoBehaviour
     public Text dialogText;
     public string[] dialog;
     private int currentDialog;
+    public string rta1;
+    public string rta2;
     public bool playerInRange;
     public Math matematica;
+
 
     // Start is called before the first frame update
     void Start(){
@@ -21,13 +24,12 @@ public class MathSign : MonoBehaviour
         if (this.CompareTag("Prob1"))
         {
             dialog[1] = matematica.Exp1(valor);
+            rta1 = matematica.Resp1(valor);
         }else if(this.CompareTag("Prob2"))
             {
             dialog[1] = matematica.Exp2(valor);
-            } else if (this.CompareTag("Prob3"))
-        {
-            dialog[1] = matematica.Exp3(valor);
-        }
+            rta2 = matematica.Resp2(valor);
+        } 
         //texto = matematica.Exp1();
     }
 
@@ -70,5 +72,13 @@ public class MathSign : MonoBehaviour
             playerInRange = false;
             dialogBox.SetActive(false);
         }
+    }
+
+    public string RetornaResp()
+    {
+        if (this.CompareTag("Prob1"))
+            return rta1;
+        else
+            return rta2;
     }
 }

@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &36358088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156402837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6113834, y: 0.641098, z: 0.20195758}
+  m_LocalPosition: {x: -4.29, y: 0.641098, z: 0.20195758}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
@@ -464,9 +464,11 @@ GameObject:
   m_Component:
   - component: {fileID: 165284309}
   - component: {fileID: 165284310}
+  - component: {fileID: 165284311}
+  - component: {fileID: 165284313}
   m_Layer: 0
   m_Name: objects2_101 (1)
-  m_TagString: Untagged
+  m_TagString: Prob1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,7 +481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165284308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.551384, y: 0.19109821, z: 0.20195758}
+  m_LocalPosition: {x: -4.21, y: 0.21, z: 0.20195758}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
@@ -537,6 +539,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &165284311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165284308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e589013b5e73cb4191bd15106107501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinalMatematica: {fileID: 367582878}
+  rta: 
+  inputu: 
+  botao: {fileID: 2044897694}
+  inputField: {fileID: 423875144}
+  textDisplay: {fileID: 1722570469}
+  playerInRange: 0
+--- !u!58 &165284313
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165284308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.3850255, y: -1.4175901}
+  serializedVersion: 2
+  m_Radius: 1.4588094
 --- !u!1 &211704486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1037,8 @@ MonoBehaviour:
   dialog:
   - '"Parte 1 do problema principal: "'
   - 
+  rta1: 
+  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!1 &391234611
@@ -1036,6 +1075,8 @@ MonoBehaviour:
   dialog:
   - Prob
   - 
+  rta1: 
+  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!4 &391234613
@@ -1157,7 +1198,7 @@ GameObject:
   - component: {fileID: 423875147}
   - component: {fileID: 423875146}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,7 +1236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1409,6 +1450,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &453238654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453238655}
+  - component: {fileID: 453238657}
+  - component: {fileID: 453238656}
+  m_Layer: 5
+  m_Name: Text2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &453238655
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453238654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1602386161}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5000135}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &453238656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453238654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &453238657
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453238654}
+  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,17 +2829,20 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - "\"Aux\xEDlio com f\xF3rmula de Bhaskara:\""
-  - "\"Lembre-se que uma equa\xE7\xE3o do segundo grau \xE9 composta de ax\xB2 +
+  - '"Vou te ajudar com Bhaskara"'
+  - "\"Lembrando que uma equa\xE7\xE3o do segundo grau se escreve assim: ax\xB2 +
     bx + c = 0.\""
-  - "\"Utilizando a f\xF3rmula, se tem x = (-b +-\u221Adelta)/2a. Sendo delta = b\xB2
-    - 4ac.\""
-  - "\"Note que existe um +- antes da ra\xEDz quadrada, isso pois s\xE3o retiradas
-    duas raizes de delta. Logo, se obt\xE9m dois valores para x.\""
-  - "\"Existem dois valores para x pois a par\xE1bola referente a fun\xE7\xE3o em
-    um plano cartesiano, passa pelo eixo x nestes dois pontos.\""
-  - "\"Quando uma fun\xE7\xE3o do segundo grau ter apenas um valor de x, significa
-    que o v\xE9rtice da parabola \xE9 o \xFAnico ponto em que ela toca o eixo x.\""
+  - "\"Colocando na f\xF3rmula de Bhaskara, a gente fica com x = (-b +-\u221Adelta)/2a.
+    Sendo o delta = b\xB2 - 4ac.\""
+  - "\"Tem um +- antes daquela ra\xEDz quadrada, isso acontece por causa dos dois
+    valores que saem da raiz quadrada, por exemplo \u221A4 pode ser 2 ou -2.\""
+  - "\"Podemos seguir agora com duas ramifica\xE7\xF5es, uma com o valor de delta
+    negativo e ao lado com o valor positivo.\""
+  - "\"Se observar o plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo
+    x duas vezes, as duas vezes s\xE3o os dois valores de x no final da aplica\xE7\xE3o
+    da f\xF3rmula de Bhaskara.\""
+  - "\"Se for obtido s\xF3 um valor de x na equa\xE7\xE3o do segundo grau, s\xF3
+    o v\xE9rtice toca no eixo x.\""
   playerInRange: 0
 --- !u!58 &660510495
 CircleCollider2D:
@@ -8001,7 +8124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2044897696}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Resposta, Assembly-CSharp
         m_MethodName: GuardaRpta
         m_Mode: 1
@@ -16835,7 +16958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190315531}
   m_Layer: 0
-  m_Name: ProblemSala2
+  m_Name: Sala2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16990,6 +17113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13de05215af3e984bac6bc65c34bd77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escolhido1: []
+  escolhido2: []
 --- !u!4 &1365284366
 Transform:
   m_ObjectHideFlags: 0
@@ -19000,7 +19125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478495333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8513832, y: 0.641098, z: 0.20195758}
+  m_LocalPosition: {x: -0.3, y: 0.641098, z: 0.20195758}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
@@ -19364,9 +19489,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1598530271}
   - component: {fileID: 1598530272}
+  - component: {fileID: 1598530273}
+  - component: {fileID: 1598530275}
   m_Layer: 0
   m_Name: objects2_101
-  m_TagString: Untagged
+  m_TagString: Prob2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19379,7 +19506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598530270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7813835, y: 0.19109821, z: 0.20195758}
+  m_LocalPosition: {x: -0.24, y: 0.19109821, z: 0.20195758}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
@@ -19437,6 +19564,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1598530273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598530270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e589013b5e73cb4191bd15106107501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sinalMatematica: {fileID: 1782874974}
+  rta: 
+  inputu: 
+  botao: {fileID: 2044897694}
+  inputField: {fileID: 453238654}
+  textDisplay: {fileID: 1722570469}
+  playerInRange: 0
+--- !u!58 &1598530275
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598530270}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.035001278, y: -1.0850687}
+  serializedVersion: 2
+  m_Radius: 1.4763083
 --- !u!1 &1602386160
 GameObject:
   m_ObjectHideFlags: 0
@@ -19450,7 +19612,7 @@ GameObject:
   - component: {fileID: 1602386163}
   - component: {fileID: 1602386162}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: InputField1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19469,6 +19631,7 @@ RectTransform:
   m_Children:
   - {fileID: 1619637177}
   - {fileID: 423875145}
+  - {fileID: 453238655}
   m_Father: {fileID: 2044897695}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20067,7 +20230,7 @@ GameObject:
   - component: {fileID: 1722570472}
   - component: {fileID: 1722570471}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20433,7 +20596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782874969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.88, y: -3.01, z: 116.592354}
+  m_LocalPosition: {x: -5.85, y: -3.01, z: 116.592354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 436454558}
@@ -20456,6 +20619,8 @@ MonoBehaviour:
   dialog:
   - '"Parte 2 do problema principal: "'
   - 
+  rta1: 
+  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!1 &1990721298
@@ -20562,14 +20727,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2044897695}
-  - component: {fileID: 2044897696}
   m_Layer: 5
   m_Name: "Bot\xE3oResposta"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2044897695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20592,21 +20756,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2044897696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044897694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac4c730de779e294d968ff212ea4af88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rpta: 
-  inputField: {fileID: 423875144}
-  textDisplay: {fileID: 1722570469}
 --- !u!1 &2083622795
 GameObject:
   m_ObjectHideFlags: 0
@@ -20788,6 +20937,8 @@ MonoBehaviour:
   dialog:
   - '"Parte 3 do problema principal: "'
   - 
+  rta1: 
+  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!1001 &5865603420895181867
