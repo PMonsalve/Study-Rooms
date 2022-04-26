@@ -74,9 +74,10 @@ public class MathSign : MonoBehaviour
         }
     }
 
-    public string RetornaResp()
+    public string RetornaRespCerta(int N)
     {
-        if (this.CompareTag("Prob1"))
+        //if (this.CompareTag("Prob1"))
+        if(N==1)
             return rta1;
         else
             return rta2;

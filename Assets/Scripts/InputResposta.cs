@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class InputResposta : MonoBehaviour
 {
     public MathSign sinalMatematica;
-    public string rta;
-    public string inputu;
+    //public string rta;
+    public string inputResposta;
     public GameObject botao;
     public GameObject inputField;
     public GameObject textDisplay;
@@ -22,7 +22,7 @@ public class InputResposta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rta = sinalMatematica.RetornaResp();
+        //rta = sinalMatematica.RetornaResp();
 
         if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
         {
@@ -35,12 +35,13 @@ public class InputResposta : MonoBehaviour
                 botao.SetActive(true);
             }
         }
+        inputResposta = inputField.GetComponent<Text>().text;
 
     }
     public void GuardaRpta()
     {
-        inputu = inputField.GetComponent<Text>().text;
-        textDisplay.GetComponent<Text>().text = "Resposta " + inputu + " inserida.";
+        textDisplay.GetComponent<Text>().text = inputField.GetComponent<Text>().text;
+        //textDisplay.GetComponent<Text>().text = "Resposta " + inputu + " inserida.";
 
        
     }
@@ -62,6 +63,11 @@ public class InputResposta : MonoBehaviour
             playerInRange = false;
             botao.SetActive(false);
         }
+    }
+
+    public string RetornaResposta()
+    {
+        return inputResposta;
     }
 
 }
