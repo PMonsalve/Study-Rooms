@@ -27,3 +27,8 @@ public class MenuPrincipal : MonoBehaviour
         Application.Quit();
     }
 }
+
+/*
+ * Imagem de fundo do menu principal foi retirada deste site:
+ * https://education.ket.org/resources/math-at-the-core/
+ */

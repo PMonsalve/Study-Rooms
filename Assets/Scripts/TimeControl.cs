@@ -9,6 +9,7 @@ public class TimeControl : MonoBehaviour
     public static TimeControl instance;
     public Text timeCounter;
     private TimeSpan timePlaying;
+    //public TextMesh timeCounter;
     private bool timerGoing;
     private float elapsedTime;
 
