@@ -16,6 +16,7 @@ public class Porta : MonoBehaviour
     public bool playerInRange;
     public string rta1, rta2;
     public string correta1, correta2;
+    public LevelLoader fim;
 
 
     // Start is called before the first frame update
@@ -37,6 +38,7 @@ public class Porta : MonoBehaviour
             if ((rta1 == correta1 && rta2 == correta2) || (rta1 == correta2 && rta2 == correta1))
             {
                 Debug.Log("Porta aberta, parabéns!!!");
+                fim.RestartLevel();
                 //dialogBox.SetActive(false);
                 //currentDialog = 0;
             }

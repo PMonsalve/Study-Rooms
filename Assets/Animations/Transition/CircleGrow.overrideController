@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CircleGrow
+  m_Controller: {fileID: 9100000, guid: 0a6b9ab852c121947844bf5b2518dba7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f162eb075b87e1544b95046cef785792, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4fc95e8d6817fbd4eab349f63a3326af, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a1729174b04d7cd45aa8eef5ad1d6988, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 60841b336c210674a9ebb4f055605d8e, type: 2}
