@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 434749385}
   - component: {fileID: 434749389}
   m_Layer: 0
-  m_Name: PlacaExplicandoProblema
+  m_Name: ExplicandoProblema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2665,22 +2665,22 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - '"Vou te ajudar com Bhaskara"'
-  - "\"Lembrando que uma equa\xE7\xE3o do segundo grau se escreve assim: ax\xB2 +
-    bx + c = 0.\" "
-  - "\"Colocando na f\xF3rmula de Bhaskara, ficamos com x = (-b +-\u221A\u0394)/2a.
-    Sendo o \u0394 = b\xB2 - 4ac.\""
-  - "\"Sabemos que por exemplo \u221A4 = 2, mas como retiramos o valor em m\xF3dulo,
+  - Vou te ajudar com Bhaskara.
+  - "Lembrando que uma equa\xE7\xE3o do segundo grau se escreve assim: ax\xB2 + bx
+    + c = 0."
+  - "Colocando na f\xF3rmula de Bhaskara, ficamos com x = (-b +-\u221A\u0394)/2a.
+    Sendo o \u0394 = b\xB2 - 4ac."
+  - "Sabemos que por exemplo \u221A4 = 2, mas como retiramos o valor em m\xF3dulo,
     no caso | 2 |, teremos o resultado 2 e -2. Para a f\xF3rmula de Bhaskara, podemos
-    dois caminhos para os dois valores que saem do m\xF3dulo da raiz quadrada.\" "
-  - "\"Se o valor de \u0394 for positivo, podemos seguir com duas ramifica\xE7\xF5es,
-    uma com o valor de delta negativo e outra com o valor positivo.\" "
-  - "\"Se observar o plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo
-    \u2018x\u2019 duas vezes, as duas vezes s\xE3o os dois valores de \u2018x\u2019
-    no final da aplica\xE7\xE3o da f\xF3rmula de Bhaskara.\" "
-  - "\"Mas se o valor de \u0394 for zero, teremos apenas uma raiz e n\xE3o precisaremos
+    dois caminhos para os dois valores que saem do m\xF3dulo da raiz quadrada."
+  - "Se o valor de \u0394 for positivo, podemos seguir com duas ramifica\xE7\xF5es,
+    uma com o valor de delta negativo e outra com o valor positivo."
+  - "Se observar o plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo \u2018x\u2019
+    duas vezes, as duas vezes s\xE3o os dois valores de \u2018x\u2019 no final da
+    aplica\xE7\xE3o da f\xF3rmula de Bhaskara."
+  - "Mas se o valor de \u0394 for zero, teremos apenas uma raiz e n\xE3o precisaremos
     separar o c\xE1lculo como antes. No plano cartesiano, a par\xE1bola tem apenas
-    seu v\xE9rtice tocando o eixo \u2018x\u2019.\" "
+    seu v\xE9rtice tocando o eixo \u2018x\u2019."
   playerInRange: 0
 --- !u!58 &660510495
 CircleCollider2D:
@@ -3086,12 +3086,12 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - "\"Vou te ajudar com multiplica\xE7\xE3o de polin\xF4mios\""
-  - "\"Temos que multiplicar cada elemento de um polin\xF4mio com cada elemento do
-    outro. Fazemos o famoso chuveirinho de multiplica\xE7\xE3o.\""
-  - "\"Vamos dizer que temos (a + b) * (c + d). Ent\xE3o \u2018a\u2019 e \u2018b\u2019
-    ser\xE3o multiplicados por \u2018c\u2019 e \u2018d\u2019 e somamos tudo.\u201D"
-  - "\u201CLogo temos (a + b) * (c + d) = ac + ad + bc + bd.\""
+  - "Vou te ajudar com multiplica\xE7\xE3o de polin\xF4mios."
+  - "Temos que multiplicar cada elemento de um polin\xF4mio com cada elemento do
+    outro. Fazemos o famoso chuveirinho de multiplica\xE7\xE3o."
+  - "Vamos dizer que temos (a + b) * (c + d). Ent\xE3o \u2018a\u2019 e \u2018b\u2019
+    ser\xE3o multiplicados por \u2018c\u2019 e \u2018d\u2019 e somamos tudo."
+  - Logo temos (a + b) * (c + d) = ac + ad + bc + bd.
   playerInRange: 0
 --- !u!58 &747659459
 CircleCollider2D:
@@ -7716,6 +7716,7 @@ GameObject:
   - component: {fileID: 890550420}
   - component: {fileID: 890550419}
   - component: {fileID: 890550418}
+  - component: {fileID: 890550422}
   m_Layer: 0
   m_Name: PlacaIndicandoSalaExtra
   m_TagString: Untagged
@@ -7738,8 +7739,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - '"Se precisar de ajuda, pode ir na sala ao lado e depois voltar aqui."'
-  - "Interessante. Ser\xE1 que preciso?"
+  - Se precisar de ajuda, pode ir na sala ao lado e depois voltar aqui.
   playerInRange: 0
 --- !u!58 &890550419
 CircleCollider2D:
@@ -7754,9 +7754,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: -0.57}
+  m_Offset: {x: -0.08745766, y: -0.116969585}
   serializedVersion: 2
-  m_Radius: 1.96
+  m_Radius: 1.2598629
 --- !u!212 &890550420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7798,7 +7798,7 @@ SpriteRenderer:
   m_SortingLayerID: 1308952571
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 364932370575592133, guid: 4dc24e272713dde43b1607550dca0a92, type: 3}
+  m_Sprite: {fileID: 4040709796975223985, guid: d000e10a43c8a3641ae69026dd98c603, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7817,12 +7817,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890550417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.58, y: -5.89, z: 116.592354}
+  m_LocalPosition: {x: 1.07, y: -6.11, z: 116.592354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 436454558}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &890550422
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890550417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017170906, y: -0.05151272}
+  m_Size: {x: 1.1488171, y: 1.7138157}
+  m_Direction: 0
 --- !u!1 &903528096
 GameObject:
   m_ObjectHideFlags: 0
@@ -20021,6 +20037,7 @@ GameObject:
   - component: {fileID: 1618934713}
   - component: {fileID: 1618934712}
   - component: {fileID: 1618934710}
+  - component: {fileID: 1618934711}
   m_Layer: 0
   m_Name: PlacaInicial
   m_TagString: Untagged
@@ -20043,8 +20060,34 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - 
+  - "Vou te dar uma explica\xE7\xE3o de onde estamos. Este \xE9 um lugar com o intuito
+    de ajudar a estudar matem\xE1tica."
+  - "Estas salas s\xE3o apenas um teste, por conta disso tem um foco pequeno em conte\xFAdos
+    de matem\xE1tica. Podem ocorrer pequenos bugs como em qualquer jogo."
+  - "Aqui tem o problema principal que envolve a aplica\xE7\xE3o da f\xF3rmula de
+    Bhaskara e por fim colocar os valores do \u2018x\u2019 nas plaquinhas do lado
+    da porta."
+  - Se quiser marcar o tempo para ver em quanto tempo consegue resolver as tarefas.
+    Se apertar a tecla T inicia o contador e Y pausa.
+  - Sempre que a sala reinicia, os valores pro problema principal mudam. Tem algumas
+    pessoas aqui para conversar e alguns livros para ler.
   playerInRange: 0
+--- !u!70 &1618934711
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618934709}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.029652596, y: -0.05930233}
+  m_Size: {x: 1.2075596, y: 1.7331371}
+  m_Direction: 0
 --- !u!58 &1618934712
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20058,9 +20101,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.41288495}
+  m_Offset: {x: 0.07394314, y: -0.19105148}
   serializedVersion: 2
-  m_Radius: 1.5845654
+  m_Radius: 1.2887869
 --- !u!212 &1618934713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20099,10 +20142,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 642991349
-  m_SortingLayer: 5
+  m_SortingLayerID: 681021299
+  m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 364932370575592133, guid: 4dc24e272713dde43b1607550dca0a92, type: 3}
+  m_Sprite: {fileID: -536671553445946595, guid: d000e10a43c8a3641ae69026dd98c603, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20121,7 +20164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618934709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.94, y: -27.48, z: 0}
+  m_LocalPosition: {x: 18.63, y: -27.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20241,9 +20284,17 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - "\"Aux\xEDlio com representa\xE7\xE3o de uma fun\xE7\xE3o do primeiro grau em
-    um plano cartesiano:\""
-  - '""'
+  - "Eu vou te ajudar com representa\xE7\xE3o de fun\xE7\xE3o do primeiro grau em
+    um plano cartesiano."
+  - "Quando temos por exemplo a equa\xE7\xE3o ax + b = 0, sendo \u2018a\u2019 o coeficiente
+    angular e \u2018b\u2019 o coeficiente linear."
+  - "Primeiro, \xE9 preciso saber onde a reta corta os eixos x e y, ent\xE3o vamos
+    encontrar os pontos ( x , 0 ) e   ( 0 , y )."
+  - "Para saber onde a fun\xE7\xE3o corta o eixo x, basta isolar o 'x' na equa\xE7\xE3o,
+    tendo x = - b/a. Assim teremos o ponto ( x , 0 )."
+  - "O valor do coeficiente linear \xE9 onde a fun\xE7\xE3o corta o eixo y no plano
+    cartesiano. Assim, teremos o ponto ( 0 , y )."
+  - "Agora \xE9 s\xF3 fazer uma reta tocando os dois pontos."
   playerInRange: 0
 --- !u!58 &1627312926
 CircleCollider2D:
@@ -20414,8 +20465,19 @@ MonoBehaviour:
   dialogText: {fileID: 565014244}
   dialog:
   - "\"Aux\xEDlio com representa\xE7\xE3o de uma fun\xE7\xE3o do primeiro grau em
-    um plano cartesiano:\""
-  - '""'
+    um plano cartesiano:\" "
+  - "\u201CEm uma equa\xE7\xE3o definida como ax + b = 0, o elemento \u2018a\u2019
+    \xE9 o coeficiente angular e \u2018b\u2019 \xE9 o coeficiente linear.\u201D"
+  - "\u201CNo plano cartesiano, \xE9 preciso encontrar dois pontos referentes \xE0
+    fun\xE7\xE3o. O ponto ( x , 0 ) que est\xE1 no eixo das abscissas e o ponto (
+    0 , y ) que est\xE1 no eixo das ordenadas.\u201D"
+  - "\u201CIsolando o \u2018x\u2019 da equa\xE7\xE3o, ela ficar\xE1 da seguinte forma:
+    x = - b/a. Assim, o valor de \u2018x\u2019 indica a posi\xE7\xE3o do ponto no
+    eixo das abscissas representando ( x , 0 ).\u201D"
+  - "\u201CPara encontrar o ponto ( 0 , y ), basta observar o coeficiente linear,
+    ele indicar\xE1 a posi\xE7\xE3o do ponto no eixo das ordenadas.\u201D"
+  - "\u201CPara fazer a representa\xE7\xE3o da fun\xE7\xE3o no plano cartesiano,
+    basta tra\xE7ar uma reta que passa pelos dois pontos encontrados.\u201D"
   playerInRange: 0
 --- !u!58 &1704611678
 CircleCollider2D:
