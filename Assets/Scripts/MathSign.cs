@@ -10,8 +10,8 @@ public class MathSign : MonoBehaviour
     public Text dialogText;
     public string[] dialog;
     private int currentDialog;
-    public string rta1;
-    public string rta2;
+    private string rta1;
+    private string rta2;
     public bool playerInRange;
     public Math matematica;
 

@@ -248,8 +248,8 @@ Transform:
   m_Children:
   - {fileID: 156402838}
   - {fileID: 1478495334}
-  - {fileID: 1598530271}
   - {fileID: 165284309}
+  - {fileID: 1598530271}
   - {fileID: 679146432}
   - {fileID: 1293040714}
   m_Father: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 156402838}
   - component: {fileID: 156402839}
   m_Layer: 0
-  m_Name: objects_124
+  m_Name: Numero1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 165284311}
   - component: {fileID: 165284313}
   m_Layer: 4
-  m_Name: objects2_101 (1)
+  m_Name: Placa1
   m_TagString: Prob1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &165284310
 SpriteRenderer:
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 211704489}
   - component: {fileID: 211704488}
   m_Layer: 0
-  m_Name: "PlacaProblemaDe Aux\xEDlio1 (1)"
+  m_Name: LivroBhaskara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,8 +920,6 @@ MonoBehaviour:
   dialog:
   - '"Parte 1 do problema principal: "'
   - 
-  rta1: 
-  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!1001 &405122656
@@ -1107,7 +1105,6 @@ GameObject:
   - component: {fileID: 434749384}
   - component: {fileID: 434749387}
   - component: {fileID: 434749386}
-  - component: {fileID: 434749388}
   - component: {fileID: 434749385}
   - component: {fileID: 434749389}
   m_Layer: 0
@@ -1138,7 +1135,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434749383}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7e337b4b3097a6409536d81f665db68, type: 3}
   m_Name: 
@@ -1146,12 +1143,15 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - "\"Precisa de uma explica\xE7\xE3o para o problema principal? Ta certo.\""
-  - "\"Quando terminar de resolver, isole os  nas equa\xE7\xF5es respostas dos problemas.\""
-  - '"Desta forma: ax + b = 0. Sendo a o coeficiente angular e  b o coeficiente linear."'
-  - "\"Agora separe os membros da equa\xE7\xE3o e fa\xE7a uma multiplica\xE7\xE3o
-    de polin\xF4mios.\""
-  - "\"Quer uma explica\xE7\xE3o formal? Aperce 'F' antes de interagir com este livro.\""
+  - "Precisa de uma explica\xE7\xE3o para o problema principal? T\xE1 certo. "
+  - "Estes livros ao lado mostram as partes do problema principal, cada livro dar\xE1
+    uma fun\xE7\xE3o do primeiro grau. Mas como uma representa\xE7\xE3o no plano
+    cartesiano, \xE9 preciso pensar um pouquinho como \xE9 a fun\xE7\xE3o."
+  - "Depois de ter as fun\xE7\xF5es definidas, \xE9 preciso multiplicar *** das fun\xE7\xF5es,
+    realizando uma multiplica\xE7\xE3o de polin\xF4mios da seguinte forma: ( a1x
+    + b1 ) \xD7 ( a2x + b2)."
+  - "Com o resultado da multiplica\xE7\xE3o \xE9 s\xF3 aplicar a f\xF3rmula de Bhaskara.
+    E coloque os resultados encontrados de \u2018x\u2019 nas plaquinhas."
   playerInRange: 0
 --- !u!58 &434749386
 CircleCollider2D:
@@ -1221,31 +1221,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &434749388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434749383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99a53d112f1a364e98dbe45382bf5f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1595521106}
-  dialogText: {fileID: 565014244}
-  dialog:
-  - "\"Precisa de uma explica\xE7\xE3o para o problema principal? Certo.\""
-  - "\"Quando terminar de resolver, isole os 'x' nas equa\xE7\xF5es que s\xE3o respostas
-    dos problemas.\""
-  - '"Desta forma: ax + b = 0. Sendo ''a'' o coeficiente angular e ''b'' o coeficiente
-    linear."'
-  - "\"Agora separe os membros da equa\xE7\xE3o e fa\xE7a uma multiplica\xE7\xE3o
-    de polin\xF4mios.\""
-  playerInRange: 0
-  formal: 0
-  initFormal: 4
 --- !u!70 &434749389
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1291,7 +1266,6 @@ Transform:
   m_Children:
   - {fileID: 367582877}
   - {fileID: 1782874973}
-  - {fileID: 2116694106}
   - {fileID: 890550421}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -2644,7 +2618,7 @@ GameObject:
   - component: {fileID: 660510494}
   - component: {fileID: 660510498}
   m_Layer: 0
-  m_Name: "PlacaProblemaDe Aux\xEDlio1"
+  m_Name: PessoaBhaskara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2793,7 +2767,7 @@ GameObject:
   - component: {fileID: 679146430}
   - component: {fileID: 679146429}
   m_Layer: 0
-  m_Name: PlacaProblemaPrincipal
+  m_Name: LivroProblemaPrincipal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2814,9 +2788,9 @@ MonoBehaviour:
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
   dialog:
-  - "\"Este \xE9 o problema principal desta sala. Resolva os outros problemas para
-    pegar as partes.\""
-  - '"(x-j) * (x-k)"  '
+  - "\"Se o problema principal da sala for resolvido com sucesso, voc\xEA poder\xE1
+    passar pela porta.\""
+  - "\"Como este jogo \xE9 um teste, passar pela porta ir\xE1 reiniciar a sala.\""
   playerInRange: 0
 --- !u!58 &679146430
 CircleCollider2D:
@@ -2872,9 +2846,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1308952571
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 681021299
+  m_SortingLayer: 3
+  m_SortingOrder: 29
   m_Sprite: {fileID: 364932370575592133, guid: 4dc24e272713dde43b1607550dca0a92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3051,7 +3025,7 @@ GameObject:
   - component: {fileID: 747659458}
   - component: {fileID: 747659461}
   m_Layer: 0
-  m_Name: "PlacaProblemaDeAux\xEDlio3"
+  m_Name: PessoaPolinomios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7821,7 +7795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 436454558}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &890550422
 CapsuleCollider2D:
@@ -16956,7 +16930,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'T inicia o contador.
 
-    Y pausa o contador.'
+    Y pausa o contador.
+
+
+    ESC para sair do jogo.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -16983,7 +16960,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
+  m_fontSize: 21.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17019,7 +16996,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -41.522514, y: 5.72719, z: 35.795456, w: -10.0226555}
+  m_margin: {x: -41.522514, y: 5.72719, z: 21.456451, w: -51.936863}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17183,12 +17160,9 @@ MonoBehaviour:
   placaResposta2: {fileID: 1598530273}
   dialogBox: {fileID: 1595521106}
   dialogText: {fileID: 565014244}
-  dialog: []
+  dialog:
+  - "A porta est\xE1 trancada."
   playerInRange: 0
-  rta1: 
-  rta2: 
-  correta1: 
-  correta2: 
   fim: {fileID: 1480627802}
 --- !u!58 &1293040716
 CircleCollider2D:
@@ -17235,8 +17209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13de05215af3e984bac6bc65c34bd77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escolhido1: []
-  escolhido2: []
 --- !u!4 &1365284366
 Transform:
   m_ObjectHideFlags: 0
@@ -19381,7 +19353,7 @@ GameObject:
   - component: {fileID: 1478495334}
   - component: {fileID: 1478495335}
   m_Layer: 0
-  m_Name: objects_125
+  m_Name: Numero2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19478,7 +19450,7 @@ GameObject:
   - component: {fileID: 1526626084}
   - component: {fileID: 1526626083}
   m_Layer: 0
-  m_Name: "PlacaProblemaDeAux\xEDlio3 (1)"
+  m_Name: LivroPolinomios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19773,7 +19745,7 @@ GameObject:
   - component: {fileID: 1598530273}
   - component: {fileID: 1598530275}
   m_Layer: 0
-  m_Name: objects2_101
+  m_Name: Placa2
   m_TagString: Prob2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19791,7 +19763,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 132173162}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1598530272
 SpriteRenderer:
@@ -20039,7 +20011,7 @@ GameObject:
   - component: {fileID: 1618934710}
   - component: {fileID: 1618934711}
   m_Layer: 0
-  m_Name: PlacaInicial
+  m_Name: PessoaExplicInicial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20263,7 +20235,7 @@ GameObject:
   - component: {fileID: 1627312925}
   - component: {fileID: 1627312929}
   m_Layer: 0
-  m_Name: "PlacaProblemaDeAux\xEDlio2"
+  m_Name: PessoaCartesiano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20413,7 +20385,7 @@ GameObject:
   - component: {fileID: 1704611677}
   - component: {fileID: 1704611676}
   m_Layer: 0
-  m_Name: "PlacaProblemaDeAux\xEDlio2 (1)"
+  m_Name: LivroCartesiano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21004,7 +20976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782874969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.43, y: 0.95, z: 116.592354}
+  m_LocalPosition: {x: -8.83, y: 1.07, z: 116.592354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 436454558}
@@ -21027,8 +20999,6 @@ MonoBehaviour:
   dialog:
   - '"Parte 2 do problema principal: "'
   - 
-  rta1: 
-  rta2: 
   playerInRange: 0
   matematica: {fileID: 1365284365}
 --- !u!1 &1990721298
@@ -21343,147 +21313,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2116694102
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2116694106}
-  - component: {fileID: 2116694105}
-  - component: {fileID: 2116694104}
-  - component: {fileID: 2116694103}
-  - component: {fileID: 2116694107}
-  m_Layer: 0
-  m_Name: PlacaProblemaDeMatematica3
-  m_TagString: Prob3
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2116694103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116694102}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7e337b4b3097a6409536d81f665db68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1595521106}
-  dialogText: {fileID: 565014244}
-  dialog:
-  - '"Parte 3 do problema principal: "'
-  - 
-  playerInRange: 0
---- !u!58 &2116694104
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116694102}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.67, y: -0.06}
-  serializedVersion: 2
-  m_Radius: 1.51
---- !u!212 &2116694105
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116694102}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1308952571
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 364932370575592133, guid: 4dc24e272713dde43b1607550dca0a92, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2116694106
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116694102}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -11.55, z: 116.592354}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 436454558}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2116694107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116694102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a96dd557cb78d4f90a8e7693cce575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1595521106}
-  dialogText: {fileID: 565014244}
-  dialog:
-  - '"Parte 3 do problema principal: "'
-  - 
-  rta1: 
-  rta2: 
-  playerInRange: 0
-  matematica: {fileID: 1365284365}
 --- !u!1001 &5865603420895181867
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,17 +12,17 @@ public class Porta : MonoBehaviour
     public GameObject dialogBox;
     public Text dialogText;
     public string[] dialog;
-    //private int currentDialog;
+    private int currentDialog;
     public bool playerInRange;
-    public string rta1, rta2;
-    public string correta1, correta2;
+    private string rta1, rta2;
+    private string correta1, correta2;
     public LevelLoader fim;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //currentDialog = 0;
+        currentDialog = 0;
     }
 
     // Update is called once per frame
@@ -39,18 +39,24 @@ public class Porta : MonoBehaviour
             {
                 Debug.Log("Porta aberta, parabéns!!!");
                 fim.RestartLevel();
-                //dialogBox.SetActive(false);
-                //currentDialog = 0;
+                dialogBox.SetActive(false);
+                currentDialog = 0;
             }
             else
             {
                 Debug.Log("Porta trancada, tente de novo.");
-                //if (currentDialog < dialog.Length)
-                //{
-                //    dialogBox.SetActive(true);
-                //    dialogText.text = dialog[currentDialog];
-                //    currentDialog++;
-                //}
+                if (currentDialog == 0 )
+                {
+                    dialogBox.SetActive(true);
+                    dialogText.text = dialog[currentDialog];
+                    currentDialog++;
+                }
+                else
+                {
+                    dialogBox.SetActive(false);
+                    currentDialog = 0;
+                }
+            
             }
         }
     }

@@ -17,11 +17,11 @@ public class Math : MonoBehaviour
                                                     "\"Considerando uma reta crescente em um plano cartesiano que passa pelo eixo y no ponto -4 e passa pelo eixo x pelo ponto 4. Qual é a equação?\"",
                                                     "\"Considerando uma reta crescente em um plano cartesiano que passa pelo eixo y no ponto -6 e passa pelo eixo x pelo ponto 6. Qual é a equação?\"" };
 
-    private string[] resposta1 = new string[5] { "x+2", "x-2", "x+4", "x+5", "x-1" };
-    private string[] resposta2 = new string[5] { "x-5", "x+2", "x-3", "x-4", "x-6" };
+    private string[] resposta1 = new string[5] { "-2", "2", "-4", "-5", "1" };
+    private string[] resposta2 = new string[5] { "5", "-2", "3", "4", "6" };
 
-    public string[] escolhido1;
-    public string[] escolhido2;
+    //public string[] escolhido1;
+    //public string[] escolhido2;
 
     //  ax² + bx + c = (x - j)(x - k)
     //  Se a reta passa pelo ponto (-2,2), o polinomio é x-2 e como é x-j, uma das raizes no final do calculo de bhaskara com este polinomio será 2.

@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.295406, y: 76.87034}
+  m_AnchoredPosition: {x: -92, y: 76.87034}
   m_SizeDelta: {x: 553.137, y: 299.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5087719
@@ -888,7 +888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.295406, y: 45}
+  m_AnchoredPosition: {x: -54, y: 45}
   m_SizeDelta: {x: 700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003464075
@@ -915,8 +915,9 @@ MonoBehaviour:
     um prot\xF3tipo de um jogo que tem como objetivo testar a efic\xE1cia do uso
     da gamifica\xE7\xE3o como um aux\xEDlio no ensino de matem\xE1tica. Ele abrange
     os conte\xFAdos de fun\xE7\xE3o do primeiro grau e seu uso no plano cartesiano,
-    polin\xF4mios e equa\xE7\xE3o do segundo grau juntamente com a utiliza\xE7\xE3o
-    da f\xF3rmula Bhaskara. \n\nUm trabalho de Pedro Schlee Monsalve."
+    multiplica\xE7\xE3o de polin\xF4mios e a utiliza\xE7\xE3o da f\xF3rmula Bhaskara.
+    \n\nDesenvolvedor: Pedro Schlee Monsalve.\nAux\xEDlio na did\xE1tica de matem\xE1tica:
+    Frederico Da Rosa Blank."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -943,7 +944,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.7
+  m_fontSize: 29.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -979,7 +980,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 5.1343384, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1044,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
