@@ -875,9 +875,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1308952571
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 681021299
+  m_SortingLayer: 3
+  m_SortingOrder: 21
   m_Sprite: {fileID: 364932370575592133, guid: 4dc24e272713dde43b1607550dca0a92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1145,11 +1145,11 @@ MonoBehaviour:
   dialog:
   - "Precisa de uma explica\xE7\xE3o para o problema principal? T\xE1 certo. "
   - "Estes livros ao lado mostram as partes do problema principal, cada livro dar\xE1
-    uma fun\xE7\xE3o do primeiro grau. Mas como uma representa\xE7\xE3o no plano
-    cartesiano, \xE9 preciso pensar um pouquinho como \xE9 a fun\xE7\xE3o."
+    uma fun\xE7\xE3o do primeiro grau. Mas representadas no plano cartesiano, \xE9
+    preciso pensar um pouquinho como \xE9 a fun\xE7\xE3o."
   - "Depois de ter as fun\xE7\xF5es definidas, \xE9 preciso multiplicar *** das fun\xE7\xF5es,
-    realizando uma multiplica\xE7\xE3o de polin\xF4mios da seguinte forma: ( a1x
-    + b1 ) \xD7 ( a2x + b2)."
+    realizando uma multiplica\xE7\xE3o de polin\xF4mios da seguinte forma:         
+    ( a1x + b1 ) \xD7 ( a2x + b2)."
   - "Com o resultado da multiplica\xE7\xE3o \xE9 s\xF3 aplicar a f\xF3rmula de Bhaskara.
     E coloque os resultados encontrados de \u2018x\u2019 nas plaquinhas."
   playerInRange: 0
@@ -20034,15 +20034,15 @@ MonoBehaviour:
   dialog:
   - "Vou te dar uma explica\xE7\xE3o de onde estamos. Este \xE9 um lugar com o intuito
     de ajudar a estudar matem\xE1tica."
-  - "Estas salas s\xE3o apenas um teste, por conta disso tem um foco pequeno em conte\xFAdos
-    de matem\xE1tica. Podem ocorrer pequenos bugs como em qualquer jogo."
+  - "Estas salas s\xE3o apenas um teste, por conta disso tem um foco em poucos conte\xFAdos.
+    Podem ocorrer pequenos bugs, como em qualquer jogo."
   - "Aqui tem o problema principal que envolve a aplica\xE7\xE3o da f\xF3rmula de
     Bhaskara e por fim colocar os valores do \u2018x\u2019 nas plaquinhas do lado
     da porta."
   - Se quiser marcar o tempo para ver em quanto tempo consegue resolver as tarefas.
-    Se apertar a tecla T inicia o contador e Y pausa.
-  - Sempre que a sala reinicia, os valores pro problema principal mudam. Tem algumas
-    pessoas aqui para conversar e alguns livros para ler.
+    Aperte a tecla T para iniciar o contador e a tecla Y para pausar.
+  - "Sempre que a sala reinicia, os valores para o problema principal s\xE3o modificados.
+    Existem algumas pessoas aqui para conversar e alguns livros para ler."
   playerInRange: 0
 --- !u!70 &1618934711
 CapsuleCollider2D:
