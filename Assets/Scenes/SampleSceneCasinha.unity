@@ -530,9 +530,12 @@ MonoBehaviour:
   - "\"Note que existe um +- antes da ra\xEDz quadrada, isso pois podem ser retiradas
     duas ra\xEDzes de \u0394. Logo, podem ser obtidos dois valores para 'x'.\""
   - "\"Quando existem dois valores diferentes para \u2018x\u2019, a par\xE1bola referente
-    a fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em dois pontos.\""
+    a fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em dois pontos.
+    Isso ocorre quando o valor de \u0394 \xE9 positivo.\""
   - "\"Quando existe apenas um valor de \u2018x\u2019, a par\xE1bola referente a
-    fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em um ponto.\""
+    fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em um ponto.
+    Isso ocorre quando o valor de \u0394 \xE9 zero.\""
+  - "\"Quando o valor de \u0394 for negativo, n\xE3o existe raiz real para 'x'.\""
   playerInRange: 0
 --- !u!58 &211704490
 CircleCollider2D:
@@ -1145,13 +1148,14 @@ MonoBehaviour:
   dialog:
   - "Precisa de uma explica\xE7\xE3o para o problema principal? T\xE1 certo. "
   - "Estes livros ao lado mostram as partes do problema principal, cada livro dar\xE1
-    uma fun\xE7\xE3o do primeiro grau. Mas representadas no plano cartesiano, \xE9
-    preciso pensar um pouquinho como \xE9 a fun\xE7\xE3o."
-  - "Depois de ter as fun\xE7\xF5es definidas, \xE9 preciso multiplicar *** das fun\xE7\xF5es,
-    realizando uma multiplica\xE7\xE3o de polin\xF4mios da seguinte forma:         
-    ( a1x + b1 ) \xD7 ( a2x + b2)."
-  - "Com o resultado da multiplica\xE7\xE3o \xE9 s\xF3 aplicar a f\xF3rmula de Bhaskara.
-    E coloque os resultados encontrados de \u2018x\u2019 nas plaquinhas."
+    uma fun\xE7\xE3o do primeiro grau. "
+  - "Elas est\xE3o representadas no plano cartesiano, ent\xE3o \xE9 preciso pensar
+    um pouquinho sobre como \xE9 a fun\xE7\xE3o. "
+  - "Depois de ter as fun\xE7\xF5es definidas, \xE9 preciso multiplicar os mon\xF4mios
+    das fun\xE7\xF5es, realizando uma multiplica\xE7\xE3o de polin\xF4mios da seguinte
+    forma:          ( a1x + b1 ) \xD7 ( a2x + b2). "
+  - "Com o resultado da multiplica\xE7\xE3o \xE9 s\xF3 aplicar a f\xF3rmula de Bhaskara
+    e depois coloque os resultados encontrados de \u2018x\u2019 nas plaquinhas."
   playerInRange: 0
 --- !u!58 &434749386
 CircleCollider2D:
@@ -2642,19 +2646,15 @@ MonoBehaviour:
   - Vou te ajudar com Bhaskara.
   - "Lembrando que uma equa\xE7\xE3o do segundo grau se escreve assim: ax\xB2 + bx
     + c = 0."
-  - "Colocando na f\xF3rmula de Bhaskara, ficamos com x = (-b +-\u221A\u0394)/2a.
+  - "Colocando na f\xF3rmula de Bhaskara, ficamos com   x = (-b +-\u221A\u0394)/2a.
     Sendo o \u0394 = b\xB2 - 4ac."
-  - "Sabemos que por exemplo \u221A4 = 2, mas como retiramos o valor em m\xF3dulo,
-    no caso | 2 |, teremos o resultado 2 e -2. Para a f\xF3rmula de Bhaskara, podemos
-    dois caminhos para os dois valores que saem do m\xF3dulo da raiz quadrada."
-  - "Se o valor de \u0394 for positivo, podemos seguir com duas ramifica\xE7\xF5es,
-    uma com o valor de delta negativo e outra com o valor positivo."
-  - "Se observar o plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo \u2018x\u2019
-    duas vezes, as duas vezes s\xE3o os dois valores de \u2018x\u2019 no final da
-    aplica\xE7\xE3o da f\xF3rmula de Bhaskara."
-  - "Mas se o valor de \u0394 for zero, teremos apenas uma raiz e n\xE3o precisaremos
+  - "Se o valor de \u0394 for positivo, temos que seguir com duas ramifica\xE7\xF5es.
+    Em um plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo \u2018x\u2019
+    duas vezes, que s\xE3o os dois valores de \u2018x\u2019 no final da f\xF3rmula."
+  - "Se o valor de \u0394 for zero, teremos apenas uma raiz e n\xE3o precisaremos
     separar o c\xE1lculo como antes. No plano cartesiano, a par\xE1bola tem apenas
     seu v\xE9rtice tocando o eixo \u2018x\u2019."
+  - "Se o valor de \u0394 negativo, n\xE3o \xE9 poss\xEDvel encontrar uma raiz real."
   playerInRange: 0
 --- !u!58 &660510495
 CircleCollider2D:
@@ -7769,8 +7769,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1308952571
-  m_SortingLayer: 4
+  m_SortingLayerID: 681021299
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4040709796975223985, guid: d000e10a43c8a3641ae69026dd98c603, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20266,7 +20266,7 @@ MonoBehaviour:
     tendo x = - b/a. Assim teremos o ponto ( x , 0 )."
   - "O valor do coeficiente linear \xE9 onde a fun\xE7\xE3o corta o eixo y no plano
     cartesiano. Assim, teremos o ponto ( 0 , y )."
-  - "Agora \xE9 s\xF3 fazer uma reta tocando os dois pontos."
+  - "Agora \xE9 s\xF3 fazer uma reta que passe pelos dois pontos."
   playerInRange: 0
 --- !u!58 &1627312926
 CircleCollider2D:
