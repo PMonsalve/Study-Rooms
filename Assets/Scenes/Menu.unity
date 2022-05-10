@@ -911,13 +911,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este \xE9 um trabalho de conclus\xE3o de curso de Ci\xEAncia da Computa\xE7\xE3o.\n\xC9
+  m_text: "Este \xE9 um trabalho de conclus\xE3o de curso de Ci\xEAncia da Computa\xE7\xE3o.\n\n\xC9
     um prot\xF3tipo de um jogo que tem como objetivo testar a efic\xE1cia do uso
     da gamifica\xE7\xE3o como um aux\xEDlio no ensino de matem\xE1tica. Ele abrange
     os conte\xFAdos de fun\xE7\xE3o do primeiro grau e seu uso no plano cartesiano,
     multiplica\xE7\xE3o de polin\xF4mios e a utiliza\xE7\xE3o da f\xF3rmula Bhaskara.
-    \n\nDesenvolvedor: Pedro Schlee Monsalve.\nAux\xEDlio na did\xE1tica de matem\xE1tica:
-    Frederico Da Rosa Blank."
+    \n\nDesenvolvedor:\nPedro Schlee Monsalve.\n\nSuporte na elabora\xE7\xE3o do
+    conte\xFAdo pedag\xF3gico:\nFrederico Da Rosa Blank."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -944,10 +944,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.05
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
