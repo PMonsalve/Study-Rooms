@@ -469,7 +469,6 @@ GameObject:
   - component: {fileID: 211704491}
   - component: {fileID: 211704490}
   - component: {fileID: 211704489}
-  - component: {fileID: 211704488}
   m_Layer: 0
   m_Name: LivroBhaskara
   m_TagString: Untagged
@@ -491,22 +490,6 @@ Transform:
   m_Father: {fileID: 1190315531}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &211704488
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211704486}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.033952713, y: -0.06385708}
-  m_Size: {x: 0.95690536, y: 1.4406071}
-  m_Direction: 0
 --- !u!114 &211704489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,11 +513,11 @@ MonoBehaviour:
   - "\"Note que existe um +- antes da ra\xEDz quadrada, isso pois podem ser retiradas
     duas ra\xEDzes de \u0394. Logo, podem ser obtidos dois valores para 'x'.\""
   - "\"Quando existem dois valores diferentes para \u2018x\u2019, a par\xE1bola referente
-    a fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em dois pontos.
-    Isso ocorre quando o valor de \u0394 \xE9 positivo.\""
+    a fun\xE7\xE3o em um plano cartesiano passa pelo eixo x em dois pontos. Isso
+    ocorre quando o valor de \u0394 \xE9 positivo.\""
   - "\"Quando existe apenas um valor de \u2018x\u2019, a par\xE1bola referente a
-    fun\xE7\xE3o em um plano cartesiano passa pelo eixo \u2018x\u2019 em um ponto.
-    Isso ocorre quando o valor de \u0394 \xE9 zero.\""
+    fun\xE7\xE3o em um plano cartesiano passa pelo eixo x em um ponto. Isso ocorre
+    quando o valor de \u0394 \xE9 zero.\""
   - "\"Quando o valor de \u0394 for negativo, n\xE3o existe raiz real para 'x'.\""
   playerInRange: 0
 --- !u!58 &211704490
@@ -550,9 +533,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16361809, y: -0.07270098}
+  m_Offset: {x: -0.16361809, y: 0.1650672}
   serializedVersion: 2
-  m_Radius: 1.4794216
+  m_Radius: 1.343554
 --- !u!212 &211704491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -837,9 +820,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11, y: -0.28}
+  m_Offset: {x: 0.093800545, y: -0.27999997}
   serializedVersion: 2
-  m_Radius: 1.63
+  m_Radius: 1.5281
 --- !u!212 &367582876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2649,11 +2632,11 @@ MonoBehaviour:
   - "Colocando na f\xF3rmula de Bhaskara, ficamos com   x = (-b +-\u221A\u0394)/2a.
     Sendo o \u0394 = b\xB2 - 4ac."
   - "Se o valor de \u0394 for positivo, temos que seguir com duas ramifica\xE7\xF5es.
-    Em um plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo \u2018x\u2019
-    duas vezes, que s\xE3o os dois valores de \u2018x\u2019 no final da f\xF3rmula."
+    Em um plano cartesiano, a par\xE1bola da fun\xE7\xE3o toca no eixo x duas vezes,
+    que s\xE3o os dois valores de 'x' no final da f\xF3rmula."
   - "Se o valor de \u0394 for zero, teremos apenas uma raiz e n\xE3o precisaremos
     separar o c\xE1lculo como antes. No plano cartesiano, a par\xE1bola tem apenas
-    seu v\xE9rtice tocando o eixo \u2018x\u2019."
+    seu v\xE9rtice tocando o eixo x."
   - "Se o valor de \u0394 negativo, n\xE3o \xE9 poss\xEDvel encontrar uma raiz real."
   playerInRange: 0
 --- !u!58 &660510495
@@ -20261,7 +20244,7 @@ MonoBehaviour:
   - "Quando temos por exemplo a equa\xE7\xE3o ax + b = 0, sendo \u2018a\u2019 o coeficiente
     angular e \u2018b\u2019 o coeficiente linear."
   - "Primeiro, \xE9 preciso saber onde a reta corta os eixos x e y, ent\xE3o vamos
-    encontrar os pontos ( x , 0 ) e   ( 0 , y )."
+    encontrar os pontos       ( x , 0 ) e ( 0 , y )."
   - "Para saber onde a fun\xE7\xE3o corta o eixo x, basta isolar o 'x' na equa\xE7\xE3o,
     tendo x = - b/a. Assim teremos o ponto ( x , 0 )."
   - "O valor do coeficiente linear \xE9 onde a fun\xE7\xE3o corta o eixo y no plano
@@ -20383,7 +20366,6 @@ GameObject:
   - component: {fileID: 1704611679}
   - component: {fileID: 1704611678}
   - component: {fileID: 1704611677}
-  - component: {fileID: 1704611676}
   m_Layer: 0
   m_Name: LivroCartesiano
   m_TagString: Untagged
@@ -20405,22 +20387,6 @@ Transform:
   m_Father: {fileID: 1190315531}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1704611676
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704611674}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.069078445, y: -0.07471275}
-  m_Size: {x: 0.8970375, y: 1.4188957}
-  m_Direction: 0
 --- !u!114 &1704611677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20438,14 +20404,14 @@ MonoBehaviour:
   dialog:
   - "\"Aux\xEDlio com representa\xE7\xE3o de uma fun\xE7\xE3o do primeiro grau em
     um plano cartesiano:\" "
-  - "\u201CEm uma equa\xE7\xE3o definida como ax + b = 0, o elemento \u2018a\u2019
-    \xE9 o coeficiente angular e \u2018b\u2019 \xE9 o coeficiente linear.\u201D"
+  - "\u201CEm uma equa\xE7\xE3o definida como ax + b = 0, o elemento 'a' \xE9 o coeficiente
+    angular e 'b' \xE9 o coeficiente linear.\u201D"
   - "\u201CNo plano cartesiano, \xE9 preciso encontrar dois pontos referentes \xE0
     fun\xE7\xE3o. O ponto ( x , 0 ) que est\xE1 no eixo das abscissas e o ponto (
     0 , y ) que est\xE1 no eixo das ordenadas.\u201D"
-  - "\u201CIsolando o \u2018x\u2019 da equa\xE7\xE3o, ela ficar\xE1 da seguinte forma:
-    x = - b/a. Assim, o valor de \u2018x\u2019 indica a posi\xE7\xE3o do ponto no
-    eixo das abscissas representando ( x , 0 ).\u201D"
+  - "\u201CIsolando o 'x' da equa\xE7\xE3o, ela ficar\xE1 da seguinte forma: x =
+    - b/a. Assim, o valor de 'x' indica a posi\xE7\xE3o do ponto no eixo das abscissas
+    representando ( x , 0 ).\u201D"
   - "\u201CPara encontrar o ponto ( 0 , y ), basta observar o coeficiente linear,
     ele indicar\xE1 a posi\xE7\xE3o do ponto no eixo das ordenadas.\u201D"
   - "\u201CPara fazer a representa\xE7\xE3o da fun\xE7\xE3o no plano cartesiano,
